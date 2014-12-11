@@ -11,3 +11,15 @@
 <template name="listitem">
 	<li class="list"><a href="#">{{name}}<i class="icon icon-trash pull-right removelist"></i></a></li>
 </template>
+
+<template name="listsnav">
+	<ul class="lists nav">
+		{{#each lists}}
+	    	{{>listitemnav}}
+		{{/each}}
+	</ul>
+</template>
+
+<template name="listitemnav">
+	<li class="list"><a href="#">{{name}}<i class="icon icon-trash pull-right removelist"></i></a></li>
+</template>

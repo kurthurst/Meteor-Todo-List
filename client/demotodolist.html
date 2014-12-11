@@ -1,21 +1,16 @@
 <head>
-  <title>Todo List Bootstrap</title>
+  <title>Meteor Todo List</title>
 </head>
-
 <body>
 	<div class="navbar navbar-static-top">
 	    <div class="navbar-inner">
 	        <a class="brand" href="#">Meteor Todo List</a>
-	        
+	    {{>listsnav}}
 	    </div>
 	</div>
-	
  	<div class="container mainContent">
 		<div class="row">
-			<div class="span3">
-				<p>{{>lists}}</p>
-			</div>
-			<div class="span8 offset1">
+			<div class="col-md-12">
 				<p>{{>todos}}</p>
 			</div>
 		</div>
